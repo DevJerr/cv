@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>Contact information</h1>
+    <p>E-mail: jina@gmail.com</p>
+    <p>Phone: 039897090047</p>
+<!-- form은 라벨과 인풋으로 이루어진다.  -->
+  <hr>
+    <!-- <form class="" action="index.html" method="post"> -->
+      <!-- This action determinse what action to take after submitting the form. So in this case, will send user back to html.index, meaning going bavk to the homepage.
+    And the method, post means it transfer what the user input in this form field to the email client-->
+      <form class="" action="mailto:jina.kang.rn@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name</label>
+    <input type="text" name="yourname" value=""><br>
+    <label>Your Email</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Messgae: </label><br>
+    <textarea name="yourmessage" rows="10" cols="20"></textarea>
+    <input type="submit" name="">
+    </form>
+    <!-- your email의 타입에 email이라고 넣어줌으로서 브라우저에게 그 인풋에 들어가는 가치가 무엇인지 basic validation을 해줌. 예를 들어, 유저가 메일주소를 @ 등의 메일에 반드시 들어가는 문자가 안 들어가있으면
+    유용한 입력가치가 아니라는 등의 안내문이 뜨게 해준다.   -->
+  </body>
+</html>

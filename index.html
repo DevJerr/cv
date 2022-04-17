@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- utf-8 : Telling web browser, when it opens this html doc, all the texts inside our website it's coded in utf-8 coding.
+      https://www.joelonsoftware.com/
+      https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+      reading list.
+      meta element give extra meta data or associated data to the html data.
+      Good information site: https://www.w3schools.com/
+
+      charset:   <meta>tag https://www.w3schools.com/tags/tag_meta.asp
+      tell the browser how to rander or display the webpage. also gives search engine about the content of the website.
+      예를 들어 MDN에서 우클릭 view page source를 누르면 이 페이지의 모든 HTML이 나오는데,
+      거기에서 Description 을 검색해보면 구글에 MDN을 쳤을때 제일 먼저 사이트의 소개로 나오는 문장이 적혀있다.
+
+      MDN에서 meta를 검색해보자. 용도, 사용법, 모든 attributes 들이 다 나와있다.
+      --!>
+
+    <title>Who's Gamja</title>
+  </head>
+  <body>
+  <table cellspacing="20px">
+      <tr>
+      <td><img src="profile-modified.png" alt="Jina Kang personal website profile"></td>
+      <td><h1>Jina Kang</h1>
+      <p><em>RN and Business Manager of <strong>Exceed Inc.</strong></em></p>
+      <p>I am a RN and a business manager at Exceed Inc. My goal is to win for both patients and my business.</p></td>
+      </tr>
+  </table>
+
+  <hr>
+
+
+
+    <!-- 이 테이블은 문장뿐아니라 사진과 문장의 레이아웃을 CSS없이도 할 수 있게 하는 역할을 한다.--!>
+    <!-- 온라인에서 사진의 링크를 복사해서 사용하려니까 에러가 나서 그냥 다운로드 받아서 했다. 내 컴퓨터에 있는 파일을 사용하려면 해당 html이 들어가있는 파일에 같이 들어가있어야한다.
+      이미 갖고 있는 사진을 프로필에 많이 사용되는 둥근 모양으로 크롭할 수 있는 사이트.
+      https://crop-circle.imageonline.co/ --!>
+
+
+    <!-- <i>and <em> both shows text in Italic. But Since we are emphasising the text here we should use <em> element.
+      The <em> element represents stress emphasis of its contents. If purely decorative purposes, that's what CSS styling is for.
+        Reading list :https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong --!>
+    <br>
+    <h3>Education</h3>
+    <ul>
+      <li>Tohto University. 2017 Human science.</li>
+      <li><a href="https://www.coursera.org/?ranMID=40328&ranEAID=j31dLGXDSD8&ranSiteID=j31dLGXDSD8-Otf6EMSkXvFC8vP199THuQ&siteID=j31dLGXDSD8-Otf6EMSkXvFC8vP199THuQ&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=j31dLGXDSD8">Coursera</a> SQL Basic</li>
+      <!-- a: anchor HTML element, href:HTML attributes, Link destination comes next, > anchor is not self-closing element. Between anchor tags, add Link Text. --!>
+    </ul>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+      ul: UnOrdered list
+      ol:Ordered list  / <ol type="i"> : Roman Nueral type
+      --!>
+      <h3>Work Experience</h3>
+      <p>2017-2018 Registered Nurse at <a href="https://www.ncgm.go.jp/">National Center for Global Health and Medicine</a></p>
+      <p>2018 Registered Nurse and Business Manager at Exceed</p>
+      <hr>
+      <table> <!--border="1px"  In table element, there is no column.--!>
+
+        <!-- Table also has header,body and footer
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>Work</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+          이런식으로 테이블 안에서도 그룹을 나눌 수 있다. 하지만 th라는 엘레먼트를 그냥 <tr>에 집어 넣어도 <th>라는 엘레먼트 자체가 테이블헤드를 가르키기때문에
+            결고가는 완벽하게 같은 결과가 나타난다. 하지만 이것을 굳이 구분해서 만드는 이유는 차후에 CSS,JS와 같은 기능을 추가할때 구분이 필요할때가 오기 때문이다.
+          --!>
+
+      <tr>
+        <td>2017-2018</td>
+        <td>Registered Nurse at <a href="https://www.ncgm.go.jp/">National Center for Global Health and Medicine</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>Registered Nurse and Business Manager at Exceed</td>
+      </tr>
+      </table>
+      <a href="Hobbies.html">My hobby</a>
+      <a href="Contact.html">Contact me</a>
+      <hr>
+        <h3>Skills</h3>
+
+        <table cellspacing="10px">
+          <tr>
+            <td>Web development</td>
+            <td>⭐⭐</td>
+            <td>Business Management</td>
+            <td>⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Japanese </td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>English </td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+              <td>Nursing</td>
+              <td>⭐⭐⭐</td>
+          </tr>
+        </table>
+  </body>
+</html>
